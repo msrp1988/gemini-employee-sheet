@@ -1,0 +1,157 @@
+<form novalidate [formGroup]="myform" (ngSubmit)="processForm()">
+    <div class="row" id="header">
+        <div class="col-sm-6" id="border-right">
+            <p>Gemini Counsulting & Service India Private Limited</p>
+        </div>
+        <div class="col-sm-6">
+            <p>Employee information sheet</p>
+        </div>
+    </div>
+    <div class="row" id="reference">
+        <div class="col-sm-12">
+            <p>Do you have any relatives or friends working in Gemini? Yes or No:</p>
+            <p>if Yes,please share the details:</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <div id="table" class="table-editable">
+                        <span class="table-add float-right mb-3 mr-2">
+                            <a href="#!" class="text-success">
+                                <i class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                        <table class="table table-bordered table-responsive-md  text-center">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">Name</th>
+                                    <th class="text-center">Position</th>
+                                    <th class="text-center">Department</th>
+                                    <th class="text-center">Relationship</th>
+                                    <th class="text-center">Presently Working Yes/No</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                    <td class="pt-3-half" contenteditable="true"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p>I Here by certify that all the information provided by me is true and accurate.</p>
+            <p>I understand that the information proviede by me may be used by Gemini Consulting & Services Pvt.Ltd. or any third party agency appointed by the orgainzation to verify and validate the information i have provided including my employment, my
+                personal background, work history and qualifications etc.</p>
+            <p>I understand that the organization or the third party agency appointed by the organization may obtain information it deems appropriate from various sources including,but not limited to current and past employers, criminal conviction records,
+                univirsity/school/college records, professional and personal references and other verifying sources/authorities.
+            </p>
+            <p>I authorize, without reservation, and individual, corporation or other private or public entity to furnish the organization or the third party agency appointed by the organization, all information about me.
+            </p>
+            <p>I unconditionally release and hold harmless any individual, corporation, or private or public entity from any and all causes of action that might rise from furnishing to the organization or the third party agency appointed by the organization
+                that they may request pursuant to this release.
+            </p>
+            <p>This authorization and release, in original, faxed or photocopied form, shall be valid for this and any future references.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1">
+            <label>Signature:</label>
+        </div>
+        <div class="col-sm-11">
+            <input type="text" id="signature" class="form-control" formControlName="signature" required>
+            <label *ngIf="!myform.controls.signature.valid && !myform.controls.signature.pristine">Invalid details
+                found</label>
+            <div class="alert" *ngIf="!myform.controls['signature'].valid && myform.controls['signature'].touched">This field is required</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1">
+            <label>Name:</label>
+        </div>
+        <div class="col-sm-11">
+            <input type="text" id="name" class="form-control" formControlName="name" required>
+            <label *ngIf="!myform.controls.name.valid && !myform.controls.name.pristine">Invalid details found</label>
+            <div class="alert" *ngIf="!myform.controls['name'].valid && myform.controls['name'].touched">This field is required
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <label>Employee ID:</label>
+        </div>
+        <div class="col-sm-10">
+            <input type="text" id="eid" class="form-control" formControlName="eid" required>
+            <label *ngIf="!myform.controls.eid.valid && !myform.controls.eid.pristine">Invalid details found</label>
+            <div class="alert" *ngIf="!myform.controls['eid'].valid && myform.controls['eid'].touched">This field is required
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1">
+            <label>Date:</label>
+        </div>
+        <div class="col-sm-11">
+            <input type="text" id="date" class="form-control" formControlName="date" required>
+            <label *ngIf="!myform.controls.date.valid && !myform.controls.date.pristine">Invalid details found</label>
+            <div class="alert" *ngIf="!myform.controls['date'].valid && myform.controls['date'].touched">This field is required
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="bodyModal"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onClick="submitForm()">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3" id="previous">
+        <nav>
+            <a routerLink="/app-page-e" routerLinkActive="active">PREVIOUS</a>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button type="submit" name="submit" class="btn " data-toggle="modal" data-target="#exampleModalLong">SUBMIT</button>
+        </div>
+    </div>
+</form>

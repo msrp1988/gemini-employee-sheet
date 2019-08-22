@@ -1,0 +1,112 @@
+#header {
+    height: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#border-right {
+    height: auto;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+#employmenthistory {
+    height: 40px;
+    text-align: center;
+    margin-top: 15px;
+    background: lightgray;
+}
+
+#companyname,
+#address,
+#phone,
+#designation,
+#department,
+#signature,
+#employeedate,
+#To,
+#eid,
+#typeofemployment,
+#ctc,
+#doj,
+#dol,
+#reasonforleaving,
+#hr,
+#mobile,
+#officephone,
+#email,
+#reportingmanager,
+#position,
+#mobileno,
+#mobileno1,
+#companyname1,
+#address1,
+#from1,
+#to1,
+#phone1,
+#designation1,
+#department1,
+#signature1,
+#employeedate1,
+#To1,
+#eid1,
+#typeofemployment1,
+#responsibilities1,
+#ctc1,
+#doj1,
+#dol1,
+#reasonforleaving1,
+#hr1,
+#mobile1,
+#officephone1,
+#Designation,
+#email1,
+#reportingmanager1,
+#position1,
+#mobileno2,
+#mobileno2,
+#mobileno3,
+#Position1,
+#hr2 {
+    height: 20px;
+    width: 100%;
+}
+
+#borderbottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+#next {
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    background: rgb(43, 145, 18);
+    border-radius: 5px;
+}
+
+#previous {
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgb(43, 145, 18);
+    border-radius: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#btn {
+    height: 30px;
+    width: 100px;
+    background: rgb(43, 145, 18);
+    border-radius: 3px;
+}

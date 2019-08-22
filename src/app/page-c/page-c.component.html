@@ -1,0 +1,717 @@
+<form novalidate [formGroup]="myform" (ngSubmit)="processForm()">
+    <div class="row" id="header">
+        <div class="col-sm-6" id="border-right">
+            <p>Gemini Counsulting & Service India Private Limited</p>
+        </div>
+        <div class="col-sm-6">
+            <p>Employee information sheet</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" id="employmenthistory">
+            <p>II(D) - Educational Qualification</p>
+            <p span style="font-size:12px;margin-top:-18px;">Copy Of Mark Sheets and SSC Certificates must be attached</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-3">
+                <label>School Name & Address:</label>
+            </div>
+            <div class="col-sm-9">
+                <input type="text" id="schoolname" class="form-control" formControlName="schoolname" required>
+                <label *ngIf="!myform.controls.schoolname.valid && !myform.controls.schoolname.pristine">Invalid details
+          found</label>
+                <div class="alert" *ngIf="!myform.controls['schoolname'].valid && myform.controls['schoolname'].touched">This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-2">
+                <label>Board Name:</label>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" id="boardname" class="form-control" formControlName="boardname" required>
+                <label *ngIf="!myform.controls.boardname.valid && !myform.controls.boardname.pristine">Invalid details
+          found</label>
+                <div class="alert" *ngIf="!myform.controls['boardname'].valid && myform.controls['boardname'].touched">This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="borderbottom">
+        <div class="col-sm-3">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label>From:</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="text" id="from" class="form-control" formControlName="from" required>
+                        <label *ngIf="!myform.controls.from.valid && !myform.controls.from.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['from'].valid && myform.controls['from'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <label>To:</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <input type="text" id="to" class="form-control" formControlName="to" required>
+                        <label *ngIf="!myform.controls.to.valid && !myform.controls.to.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['to'].valid && myform.controls['to'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-3">
+                <label>Student ID/Enrolment No:</label>
+            </div>
+            <div class="col-sm-9">
+                <input type="text" id="studentid" class="form-control" formControlName="studentid" required>
+                <label *ngIf="!myform.controls.studentid.valid && !myform.controls.studentid.pristine">Invalid details
+          found</label>
+                <div class="alert" *ngIf="!myform.controls['studentid'].valid && myform.controls['studentid'].touched">This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="borderbottom">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label>Medium Of Study:</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" id="mediumofstudy" class="form-control" formControlName="mediumofstudy" required>
+                        <label *ngIf="!myform.controls.mediumofstudy.valid && !myform.controls.mediumofstudy.pristine">Invalid
+              details found</label>
+                        <div class="alert" *ngIf="!myform.controls['mediumofstudy'].valid && myform.controls['mediumofstudy'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label>Percentage/Grade:</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" id="percentage" class="form-control" formControlName="percentage" required>
+                        <label *ngIf="!myform.controls.percentage.valid && !myform.controls.percentage.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['percentage'].valid && myform.controls['percentage'].touched">
+                            This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" id="employmenthistory">
+            <p>II(E)-Certification Details</p>
+            <p span style="font-size:12px;margin-top:-18px;">Diploma and Other Courses</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-3">
+                <label>Course Details & Institute:</label>
+            </div>
+            <div class="col-sm-9">
+                <input type="text" id="coursedetails" class="form-control" formControlName="coursedetails" required>
+                <label *ngIf="!myform.controls.coursedetails.valid && !myform.controls.coursedetails.pristine">Invalid details
+          found</label>
+                <div class="alert" *ngIf="!myform.controls['coursedetails'].valid && myform.controls['coursedetails'].touched">
+                    This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="borderbottom">
+        <div class="col-sm-5">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label>Duration:</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="text" id="duration" class="form-control" formControlName="duration" required>
+                        <label *ngIf="!myform.controls.duration.valid && !myform.controls.duration.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['duration'].valid && myform.controls['duration'].touched">This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label>Subjects:</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" id="subjects" class="form-control" formControlName="subjects" required>
+                        <label *ngIf="!myform.controls.subjects.valid && !myform.controls.subjects.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['subjects'].valid && myform.controls['subjects'].touched">This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label>Percentage/Grade:</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" id="grade" class="form-control" formControlName="grade" required>
+                        <label *ngIf="!myform.controls.grade.valid && !myform.controls.grade.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['grade'].valid && myform.controls['grade'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-3">
+                <label>Course Details & Institute:</label>
+            </div>
+            <div class="col-sm-9">
+                <input type="text" id="institute" class="form-control" formControlName="institute" required>
+                <label *ngIf="!myform.controls.institute.valid && !myform.controls.institute.pristine">Invalid details
+          found</label>
+                <div class="alert" *ngIf="!myform.controls['institute'].valid && myform.controls['institute'].touched">This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="borderbottom">
+        <div class="col-sm-5">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label>Duration:</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="text" id="duration1" class="form-control" formControlName="duration1" required>
+                        <label *ngIf="!myform.controls.duration1.valid && !myform.controls.duration1.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['duration1'].valid && myform.controls['duration1'].touched">This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label>Subjects:</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" id="subjects1" class="form-control" formControlName="subjects1" required>
+                        <label *ngIf="!myform.controls.subjects1.valid && !myform.controls.subjects1.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['subjects1'].valid && myform.controls['subjects1'].touched">This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label>Percentage/Grade:</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" id="grade1" class="form-control" formControlName="grade1" required>
+                        <label *ngIf="!myform.controls.grade1.valid && !myform.controls.grade1.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['grade1'].valid && myform.controls['grade1'].touched">This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" id="employmenthistory">
+            <p>III(A)-Employment History</p>
+            <p span style="font-size:14px;margin-top:-20px; padding-bottom: 5px;">Details of Current or Last Employer</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-2">
+                <label>Company Name:</label>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" id="companyname" class="form-control" formControlName="companyname" required>
+                <label *ngIf="!myform.controls.companyname.valid && !myform.controls.companyname.pristine">Invalid details
+          found</label>
+                <div class="alert" *ngIf="!myform.controls['companyname'].valid && myform.controls['companyname'].touched">This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-4">
+                <label>Head Office(Location & Address):</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="headoffice" class="form-control" formControlName="headoffice" required>
+                <label *ngIf="!myform.controls.headoffice.valid && !myform.controls.headoffice.pristine">Invalid details
+          found</label>
+                <div class="alert" *ngIf="!myform.controls['headoffice'].valid && myform.controls['headoffice'].touched">This field is required</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-3">
+                <label>Address(Branch Worked):</label>
+            </div>
+            <div class="col-sm-9">
+                <input type="text" id="address" class="form-control" formControlName="address" required>
+                <label *ngIf="!myform.controls.address.valid && !myform.controls.address.pristine">Invalid details found</label>
+                <div class="alert" *ngIf="!myform.controls['address'].valid && myform.controls['address'].touched">This field is required
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="borderbottom">
+        <div class="col-sm-3">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label>Phone:</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="text" id="phone" class="form-control" formControlName="phone" required>
+                        <label *ngIf="!myform.controls.phone.valid && !myform.controls.phone.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['phone'].valid && myform.controls['phone'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <label>Fax:</label>
+                    </div>
+                    <div class="col-sm-11">
+                        <input type="text" id="fax" class="form-control" formControlName="fax" required>
+                        <label *ngIf="!myform.controls.fax.valid && !myform.controls.fax.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['fax'].valid && myform.controls['fax'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="borderbottom">
+        <div class="col-sm-5">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label>Designation:</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="text" id="designation" class="form-control" formControlName="designation" required>
+                        <label *ngIf="!myform.controls.designation.valid && !myform.controls.designation.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['designation'].valid && myform.controls['designation'].touched">
+                            This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <label>Department:</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" id="department" class="form-control" formControlName="department" required>
+                        <label *ngIf="!myform.controls.department.valid && !myform.controls.department.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['department'].valid && myform.controls['department'].touched">
+                            This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label>Signature:</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" id="signature" class="form-control" formControlName="signature" required>
+                        <label *ngIf="!myform.controls.signature.valid && !myform.controls.signature.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['signature'].valid && myform.controls['signature'].touched">This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="borderbottom">
+        <div class="col-sm-5">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <label>Employment Date From:</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <input type="text" id="employeedate" class="form-control" formControlName="employeedate" required>
+                        <label *ngIf="!myform.controls.employeedate.valid && !myform.controls.employeedate.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['employeedate'].valid && myform.controls['employeedate'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <label>To:</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" id="to1" class="form-control" formControlName="to1" required>
+                        <label *ngIf="!myform.controls.to1.valid && !myform.controls.to1.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['to1'].valid && myform.controls['to1'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <label>Employee ID:</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" id="eid" class="form-control" formControlName="eid" required>
+                        <label *ngIf="!myform.controls.eid.valid && !myform.controls.eid.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['eid'].valid && myform.controls['eid'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-3">
+                <label>Type of Employment</label>
+            </div>
+            <div class="col-sm-9">
+                <input type="text" id="typeofemployment" class="form-control" formControlName="typeofemployment" required>
+                <label *ngIf="!myform.controls.typeofemployment.valid && !myform.controls.typeofemployment.pristine">Invalid
+          details found</label>
+                <div class="alert" *ngIf="!myform.controls['typeofemployment'].valid && myform.controls['typeofemployment'].touched">This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-2">
+                <label>Responsibilities</label>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" id="responsibilities" class="form-control" formControlName="responsibilities" required>
+                <label *ngIf="!myform.controls.responsibilities.valid && !myform.controls.responsibilities.pristine">Invalid
+          details found</label>
+                <div class="alert" *ngIf="!myform.controls['responsibilities'].valid && myform.controls['responsibilities'].touched">This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="borderbottom">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <label>Remuneration(CTC & Monthly Package):</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" id="ctc" class="form-control" formControlName="ctc" required>
+                        <label *ngIf="!myform.controls.ctc.valid && !myform.controls.ctc.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['ctc'].valid && myform.controls['ctc'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label>DOJ:</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" id="doj" class="form-control" formControlName="doj" required>
+                        <label *ngIf="!myform.controls.doj.valid && !myform.controls.doj.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['doj'].valid && myform.controls['doj'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label>Date of Leaving:</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" id="dol" class="form-control" formControlName="dol" required>
+                        <label *ngIf="!myform.controls.dol.valid && !myform.controls.dol.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['dol'].valid && myform.controls['dol'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-2">
+                <label>Reson For Leaving</label>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" id="reasonforleaving" class="form-control" formControlName="reasonforleaving" required>
+                <label *ngIf="!myform.controls.reasonforleaving.valid && !myform.controls.reasonforleaving.pristine">Invalid
+          details found</label>
+                <div class="alert" *ngIf="!myform.controls['reasonforleaving'].valid && myform.controls['reasonforleaving'].touched">This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="borderbottom">
+        <div class="col-sm-5">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <label>Reporting Manager's Name:</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <input type="text" id="reportingmanager" class="form-control" formControlName="reportingmanager" required>
+                        <label *ngIf="!myform.controls.reportingmanager.valid && !myform.controls.reportingmanager.pristine">Invalid
+              details found</label>
+                        <div class="alert" *ngIf="!myform.controls['reportingmanager'].valid && myform.controls['reportingmanager'].touched">This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label>Position:</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" id="position" class="form-control" formControlName="position" required>
+                        <label *ngIf="!myform.controls.position.valid && !myform.controls.position.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['position'].valid && myform.controls['position'].touched">This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label>Mobile Number:</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" id="mobileno" class="form-control" formControlName="mobileno" required>
+                        <label *ngIf="!myform.controls.mobileno.valid && !myform.controls.mobileno.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['mobileno'].valid && myform.controls['mobileno'].touched">This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="borderbottom">
+        <div class="col-sm-8">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label>HR Name:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="text" id="hr" class="form-control" formControlName="hr" required>
+                        <label *ngIf="!myform.controls.hr.valid && !myform.controls.hr.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['hr'].valid && myform.controls['hr'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label>Mobile Number:</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" id="mobileno1" class="form-control" formControlName="mobileno1" required>
+                        <label *ngIf="!myform.controls.mobileno1.valid && !myform.controls.mobileno1.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['mobileno1'].valid && myform.controls['mobileno1'].touched">This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row" id="borderbottom">
+            <div class="col-sm-2">
+                <label>Office Phone(Ext):</label>
+            </div>
+            <div class="col-sm-10">
+                <input type="text" id="officephone" class="form-control" formControlName="officephone" required>
+                <label *ngIf="!myform.controls.officephone.valid && !myform.controls.officephone.pristine">Invalid details
+          found</label>
+                <div class="alert" *ngIf="!myform.controls['officephone'].valid && myform.controls['officephone'].touched">This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Are there any pending obligations on the part of the company, such as, clearance of Full and Final Settlement, Service, Training or Overseas and travel bonds? if Yes, Please Specify:
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <textarea class="form-control rounded-0" id="pendingobligations" rows="2" class="form-control" formControlName="pendingobligations" required></textarea>
+                <label *ngIf="!myform.controls.pendingobligations.valid && !myform.controls.pendingobligations.pristine">Invalid
+          details found</label>
+                <div class="alert" *ngIf="!myform.controls['pendingobligations'].valid && myform.controls['pendingobligations'].touched">This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-5">
+                <label>Has your organization Officially relieved you?</label>
+            </div>
+            <div class="col-sm-7">
+                <input type="text" id="organization" class="form-control" formControlName="organization" required>
+                <label *ngIf="!myform.controls.organization.valid && !myform.controls.organization.pristine">Invalid details
+          found</label>
+                <div class="alert" *ngIf="!myform.controls['organization'].valid && myform.controls['organization'].touched">
+                    This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-4">
+                <label>Can reference check be done?</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="referencecheck" class="form-control" formControlName="referencecheck" required>
+                <label *ngIf="!myform.controls.referencecheck.valid && !myform.controls.referencecheck.pristine">Invalid details
+          found</label>
+                <div class="alert" *ngIf="!myform.controls['referencecheck'].valid && myform.controls['referencecheck'].touched">This field is required
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="borderbottom">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label>Name:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="text" id="Name" class="form-control" formControlName="Name" required>
+                        <label *ngIf="!myform.controls.Name.valid && !myform.controls.Name.pristine">Invalid details found</label>
+                        <div class="alert" *ngIf="!myform.controls['Name'].valid && myform.controls['Name'].touched">This field is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label>Designation:</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" id="Designation" class="form-control" formControlName="Designation" required>
+                        <label *ngIf="!myform.controls.Designation.valid && !myform.controls.Designation.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['Designation'].valid && myform.controls['Designation'].touched">
+                            This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <label>Mobile/Landline No:</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <input type="text" id="landline" class="form-control" formControlName="landline" required>
+                        <label *ngIf="!myform.controls.landline.valid && !myform.controls.landline.pristine">Invalid details
+              found</label>
+                        <div class="alert" *ngIf="!myform.controls['landline'].valid && myform.controls['landline'].touched">This field is required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-7"></div>
+        <div class="col-sm-5">
+            <div class="row">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-3" id="next">
+                    <nav>
+                        <a routerLink="/app-page-b" routerLinkActive="active">PREVIOUS</a>
+                    </nav>
+                </div>
+                <div class="col-sm-3" id="next">
+                    <nav>
+                        <a routerLink="/app-page-d" routerLinkActive="active">NEXT</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button type="submit" name="submit" id="btn">SUBMIT</button>
+        </div>
+    </div>
+</form>

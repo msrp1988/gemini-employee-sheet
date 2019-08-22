@@ -1,0 +1,108 @@
+#header {
+    height: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#border-right {
+    height: auto;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+#employmenthistory {
+    height: 40px;
+    text-align: center;
+    margin-top: 15px;
+    background: lightgray;
+    border-top: 1px solid black;
+}
+
+#schoolname,
+#boardname,
+#boardname,
+#from,
+#to,
+#studentid,
+#mediumofstudy,
+#coursedetails,
+#institute,
+#duration1,
+#subjects1,
+#grade1,
+#percentage,
+#duration,
+#subjects,
+#grade,
+#companyname,
+#headoffice,
+#address,
+#phone,
+#fax,
+#designation,
+#department,
+#signature,
+#employeedate,
+#to1,
+#eid,
+#typeofemployment,
+#responsibilities,
+#ctc,
+#doj,
+#dol,
+#reasonforleaving,
+#reportingmanager,
+#position,
+#mobileno,
+#mobileno1,
+#hr,
+#mobile,
+#mobile1,
+#officephone,
+#organization,
+#referencecheck,
+#Name,
+#Designation,
+#landline {
+    height: 20px;
+    width: 100%;
+}
+
+#borderbottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+#next {
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    background: rgb(43, 145, 18);
+    border-radius: 5px;
+}
+
+#previous {
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgb(43, 145, 18);
+    border-radius: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#btn {
+    height: 30px;
+    width: 100px;
+    background: rgb(43, 145, 18);
+    border-radius: 3px;
+}

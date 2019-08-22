@@ -1,0 +1,123 @@
+#header {
+    height: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#border-right {
+    height: auto;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+#visa,
+#familyinformation {
+    height: 30px;
+    text-align: center;
+    margin-top: 30px;
+    background: lightgray;
+    border-top: 1px solid black;
+}
+
+#education {
+    height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    background: lightgray;
+    border-top: 1px solid black;
+}
+
+#borderbottom {
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#expectedvisa,
+#typeofvisa,
+#validity,
+#passportno,
+#passportvalidity,
+#issuinglocation,
+#countriesvisited,
+#collegename,
+#universityname,
+#from,
+#to,
+#program,
+#othersspecify,
+#studentid,
+#typeofdegree,
+#majorsubjects,
+#mediumofstudy,
+#percentage,
+#enrolmentno,
+#collegename,
+#universityname1,
+#from1,
+#to1,
+#program1,
+#othersspecify1,
+#enrolmentid,
+#typeofdegree,
+#majorsubjects,
+#mediumofstudy1,
+#grade,
+#collegename1,
+#boardname,
+#from2,
+#to2,
+#enrolmentno,
+#mediumofstudy2,
+#percentagegrade,
+#graduatedintime,
+#graduatedintime1,
+#universityname2,
+#typeofdegree1,
+#collegename2,
+#majorsubjects1 {
+    height: 20px;
+    width: 100%;
+}
+
+#visa-rejection {
+    height: auto;
+    width: 100%;
+}
+
+.pt-3-half {
+    padding-top: 1.4rem;
+}
+
+#next {
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    background: rgb(43, 145, 18);
+    border-radius: 5px;
+}
+
+#previous {
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgb(43, 145, 18);
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#btn {
+    height: 30px;
+    width: 100px;
+    background: rgb(43, 145, 18);
+    border-radius: 3px;
+}

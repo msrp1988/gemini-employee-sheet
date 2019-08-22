@@ -1,0 +1,101 @@
+.header-section{
+    height: auto;
+    width: 100%;
+    margin-left: 20px;   
+    background: green;
+}
+
+#header{
+    height: auto;
+    width: auto;
+    margin-top: 40px;   
+}
+
+#border-bottom{
+    height: auto;
+    width: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-bottom: 1px solid black;
+}
+
+#content-text{
+    text-align: center;
+    padding-top: 24px;
+    padding-left: 60px;
+}
+
+#border{
+    height: auto;
+    border: 1px solid black;
+}
+
+#formno,#issueno,#revno{
+    height: 20px;
+    width: 90%;    
+    margin-top:3px;
+}
+
+#p-photo{
+    height: auto;
+    width:100%;     
+}
+
+#PersonalDetails,#emergencyinformation,#PhysicalandLegal{
+    height: 25px;
+    width: 100%;
+    text-align: center;      
+    margin-top: 5px;  
+    background: lightgray;    
+}
+
+#fullname,#dob, #gender, #marital,#yearsofexperiance,#designation,#poj,#doj,#eid
+,#resphone,#bloodgroup,#mobile,#email,#panno,#aadharno,#passportno,#validity
+,#placeofissue,#pfno,#uanno,#periodofstay,#from,#to,#periodofstay1,#from1,#to1,
+#fullname,#phoneI,#address,#phoneII,#relationship,#fullname1,#fullname2,#phoneI1
+,#address1,#phoneII1{  
+    height: 20px; 
+    width: 100%;      
+}
+
+#current-residential,#near-ps,#current-residential-address,#near-by-ps{
+    height: 80px; 
+    width: 100%;  
+}
+
+#pid{
+    text-align: left;
+}
+
+#borderbottom{
+    height: 30px;   
+    border-bottom: 1px solid black;
+}
+
+#next{
+    float:right;
+    height: 30px;
+    width: 100px;   
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    background: rgb(43, 145, 18);
+    border-radius: 5px;
+    }
+
+ a{        
+    text-decoration: none;
+    color: white;
+}
+
+#habits-review,#health-review,#operations-review,#crime-review{
+    height: auto;
+    width: 100%;
+}
+
+#btn{
+    height: 30px;
+    width: 100px;
+    background:  rgb(43, 145, 18);
+    border-radius: 3px;
+}
